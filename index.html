@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VIVITI | Revenda Moda Feminina</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind custom config (cores, fontes) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50:  '#fff7f5',
+              100: '#ffe9e3',
+              200: '#ffd4c7',
+              300: '#ffb6a1',
+              400: '#ff8e71',
+              500: '#e57a60',   /* rosa queimado */
+              600: '#cc6b55',
+              700: '#a75546',
+              800: '#87453a',
+              900: '#6f3a31'
+            },
+            gold: '#C9A26B',
+            ink:  '#1e1b18'
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            sans: ['Poppins', 'ui-sans-serif', 'system-ui']
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(0,0,0,0.08)'
+          },
+          backgroundImage: {
+            'beige-gradient':
+              'linear-gradient(180deg, #fffaf6 0%, #fff 60%)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <meta name="description" content="Fornecemos roupas femininas para revendedoras de todo o Brasil. Comece hoje mesmo a empreender com a VIVITI.">
+</head>
+
+<body class="bg-beige-gradient text-ink antialiased">
+
+  <!-- Header / Hero -->
+  <header class="relative overflow-hidden">
+    <nav class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <!-- Substitua pelo logo real quando tiver -->
+        <div class="w-10 h-10 rounded-full bg-gold/20 border border-gold/40"></div>
+        <span class="font-display text-xl tracking-wide">VIVITI</span>
+      </div>
+
+      <div class="hidden md:flex items-center gap-4">
+        <a href="#beneficios" class="text-sm hover:text-brand-600">Benefícios</a>
+        <a href="#galeria" class="text-sm hover:text-brand-600">Catálogo</a>
+        <a href="#vendedoras" class="text-sm hover:text-brand-600">Atendimento</a>
+        <a href="#contato" class="text-sm hover:text-brand-600">Contato</a>
+        <a href="#cta" class="ml-2 inline-flex items-center rounded-xl bg-brand-600 text-white px-4 py-2 text-sm font-medium shadow-soft hover:bg-brand-700 transition">
+          Quero revender
+        </a>
+      </div>
+    </nav>
+
+    <section class="max-w-7xl mx-auto px-6 pt-6 pb-16 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="font-display text-4xl md:text-5xl leading-tight">
+          Comece hoje mesmo a <span class="text-brand-600">empreender</span> com moda feminina de qualidade 🚀
+        </h1>
+        <p class="mt-5 text-lg text-neutral-700">
+          Fornecemos roupas femininas para revendedoras de todo o Brasil 🇧🇷.
+          Monte seu negócio com peças elegantes, envio rápido e suporte personalizado.
+        </p>
+
+        <div class="mt-7 flex flex-col sm:flex-row gap-3">
+          <a href="#cta" class="inline-flex items-center justify-center rounded-2xl bg-brand-600 text-white px-6 py-3 font-medium shadow-soft hover:bg-brand-700 transition">
+            Quero revender agora
+          </a>
+          <a href="#como-funciona" class="inline-flex items-center justify-center rounded-2xl border border-ink/10 px-6 py-3 font-medium hover:border-ink/30 transition">
+            Como funciona
+          </a>
+        </div>
+
+        <div class="mt-6 flex items-center gap-4 text-sm text-neutral-600">
+          <div class="flex -space-x-2">
+            <img class="w-8 h-8 rounded-full ring-2 ring-white" src="https://i.pravatar.cc/100?img=12" alt="Revendedora 1">
+            <img class="w-8 h-8 rounded-full ring-2 ring-white" src="https://i.pravatar.cc/100?img=8" alt="Revendedora 2">
+            <img class="w-8 h-8 rounded-full ring-2 ring-white" src="https://i.pravatar.cc/100?img=30" alt="Revendedora 3">
+          </div>
+          <span>+500 revendedoras atendidas</span>
+        </div>
+      </div>
+
+      <!-- Hero image (pode trocar por alguma das fotos de produto se quiser) -->
+      <div class="relative">
+        <div class="aspect-[4/5] w-full rounded-3xl overflow-hidden shadow-soft bg-white">
+          <!-- Substitua o src abaixo por uma imagem de destaque da marca -->
+          <img
+            src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop"
+            alt="Coleção feminina"
+            class="h-full w-full object-cover">
+        </div>
+        <div class="absolute -bottom-6 -left-6 bg-white/80 backdrop-blur rounded-2xl p-4 shadow-soft border border-ink/5 hidden md:block">
+          <p class="text-sm"><span class="font-semibold">Sem pedido mínimo</span> • Envio para todo o Brasil</p>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!-- Benefícios -->
+  <section id="beneficios" class="max-w-7xl mx-auto px-6 py-12">
+    <div class="grid md:grid-cols-4 gap-6">
+      <div class="p-6 rounded-2xl bg-white shadow-soft border border-ink/5">
+        <div class="w-10 h-10 rounded-lg bg-brand-50 flex items-center justify-center mb-3">
+          <!-- ícone -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v12m6-6H6"/></svg>
+        </div>
+        <h3 class="font-semibold mb-1">Lucros atrativos</h3>
+        <p class="text-sm text-neutral-600">Margens competitivas com peças desejadas.</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-white shadow-soft border border-ink/5">
+        <div class="w-10 h-10 rounded-lg bg-brand-50 flex items-center justify-center mb-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor"><path d="M3 3a1 1 0 011-1h2a1 1 0 011 1v1h6V3a1 1 0 011-1h2a1 1 0 011 1v3H3V3z"/><path d="M3 7h14v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"/></svg>
+        </div>
+        <h3 class="font-semibold mb-1">Sem pedido mínimo</h3>
+        <p class="text-sm text-neutral-600">Comece do seu jeito, sem barreiras.</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-white shadow-soft border border-ink/5">
+        <div class="w-10 h-10 rounded-lg bg-brand-50 flex items-center justify-center mb-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M3 7h18v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"/><path d="M3 7l4-4h10l4 4"/></svg>
+        </div>
+        <h3 class="font-semibold mb-1">Qualidade boutique</h3>
+        <p class="text-sm text-neutral-600">Acabamento superior e modelagens atuais.</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-white shadow-soft border border-ink/5">
+        <div class="w-10 h-10 rounded-lg bg-brand-50 flex items-center justify-center mb-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 10h11M9 21V3m4 18l8-8-8-8"/></svg>
+        </div>
+        <h3 class="font-semibold mb-1">Envio Brasil inteiro</h3>
+        <p class="text-sm text-neutral-600">Logística ágil e rastreio garantido.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Como funciona -->
+  <section id="como-funciona" class="max-w-7xl mx-auto px-6 pb-6">
+    <div class="rounded-3xl bg-white p-8 md:p-12 shadow-soft border border-ink/5">
+      <h2 class="font-display text-3xl mb-6">Como funciona</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border border-ink/5">
+          <span class="text-sm font-semibold text-brand-600">1º Passo</span>
+          <h3 class="mt-1 font-semibold">Escolha no catálogo</h3>
+          <p class="text-sm text-neutral-600 mt-1">Receba o catálogo atualizado e selecione as peças.</p>
+        </div>
+        <div class="p-6 rounded-2xl border border-ink/5">
+          <span class="text-sm font-semibold text-brand-600">2º Passo</span>
+          <h3 class="mt-1 font-semibold">Peça pelo WhatsApp</h3>
+          <p class="text-sm text-neutral-600 mt-1">Atendimento humano para fechar pedidos com rapidez.</p>
+        </div>
+        <div class="p-6 rounded-2xl border border-ink/5">
+          <span class="text-sm font-semibold text-brand-600">3º Passo</span>
+          <h3 class="mt-1 font-semibold">Receba e revenda</h3>
+          <p class="text-sm text-neutral-600 mt-1">Embale, venda e lucre — simples assim.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria com as 3 imagens enviadas -->
+  <section id="galeria" class="max-w-7xl mx-auto px-6 py-12">
+    <div class="flex items-end justify-between mb-6">
+      <h2 class="font-display text-3xl">Destaques do catálogo</h2>
+      <a href="#cta" class="text-sm text-brand-700 hover:underline">Quero ver o catálogo completo</a>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Imagem 1 -->
+      <figure class="group relative rounded-3xl overflow-hidden bg-white shadow-soft border border-ink/5">
+        <img src="images/saia-jeans-midi.jpg"
+             alt="Modelo usando saia jeans midi com blusa azul"
+             class="h-[460px] w-full object-cover group-hover:scale-[1.02] transition" />
+        <figcaption class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/60 to-transparent text-white">
+          <div class="text-sm opacity-90">Saia Jeans Midi</div>
+          <div class="font-medium">Coleção Denim Elegance</div>
+        </figcaption>
+      </figure>
+
+      <!-- Imagem 2 -->
+      <figure class="group relative rounded-3xl overflow-hidden bg-white shadow-soft border border-ink/5">
+        <img src="images/saia-off-white-botoes.jpg"
+             alt="Modelo usando saia off-white com botões e blusa branca"
+             class="h-[460px] w-full object-cover group-hover:scale-[1.02] transition" />
+        <figcaption class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/60 to-transparent text-white">
+          <div class="text-sm opacity-90">Saia Off White</div>
+          <div class="font-medium">Linha Essential</div>
+        </figcaption>
+      </figure>
+
+      <!-- Imagem 3 -->
+      <figure class="group relative rounded-3xl overflow-hidden bg-white shadow-soft border border-ink/5">
+        <img src="images/saia-jeans-two-tone.jpg"
+             alt="Modelo usando saia jeans de duas cores com blusa marrom"
+             class="h-[460px] w-full object-cover group-hover:scale-[1.02] transition" />
+        <figcaption class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/60 to-transparent text-white">
+          <div class="text-sm opacity-90">Saia Two Tone Premium</div>
+          <div class="font-medium">Capsule Night</div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Vendedoras / Atendimento -->
+  <section id="vendedoras" class="max-w-7xl mx-auto px-6 py-12">
+    <div class="text-center mb-8">
+      <h2 class="font-display text-3xl">Atendimento personalizado no WhatsApp</h2>
+      <p class="text-neutral-700 mt-2">Fale com nossa equipe de atacado. Segunda a Sábado.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Ana -->
+      <div class="p-6 rounded-3xl bg-white shadow-soft border border-ink/5">
+        <img class="w-20 h-20 rounded-2xl object-cover mb-4"
+             src="https://i.pravatar.cc/200?img=5"
+             alt="Ana – Vendedora" />
+        <h3 class="font-semibold text-lg">Ana</h3>
+        <p class="text-sm text-neutral-600">Atendimento on-line • Terça a Sábado • Atacado</p>
+        <a href="#"
+           class="mt-4 inline-flex items-center gap-2 rounded-xl bg-emerald-600 text-white px-4 py-2 text-sm font-medium hover:bg-emerald-700 transition">
+          <!-- ícone WhatsApp -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A11.92 11.92 0 0 0 12.06 0C5.44 0 .06 5.38.06 12c0 2.12.55 4.18 1.6 6.02L0 24l6.17-1.61a12 12 0 0 0 5.89 1.53h.01c6.62 0 12-5.38 12-12 0-3.2-1.25-6.21-3.55-8.44zM12.06 22a10 10 0 0 1-5.1-1.4l-.37-.22-3.66.96.98-3.56-.24-.37A10 10 0 1 1 22.06 12c0 5.52-4.48 10-10 10zm5.48-7.53c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.78-1.68-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.2-.24-.58-.49-.5-.67-.5-.17 0-.37 0-.57 0-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.87 1.2 3.06.15.2 2.08 3.18 5.04 4.46.7.3 1.25.47 1.68.6.7.22 1.33.19 1.84.12.56-.08 1.76-.72 2.01-1.4.25-.68.25-1.27.17-1.4-.07-.13-.27-.2-.57-.35z"/></svg>
+          Falar com Ana
+        </a>
+      </div>
+
+      <!-- Thais -->
+      <div class="p-6 rounded-3xl bg-white shadow-soft border border-ink/5">
+        <img class="w-20 h-20 rounded-2xl object-cover mb-4"
+             src="https://i.pravatar.cc/200?img=15"
+             alt="Thais – Vendedora" />
+        <h3 class="font-semibold text-lg">Thais</h3>
+        <p class="text-sm text-neutral-600">Atendimento on-line • Segunda a Sexta • Atacado</p>
+        <a href="#"
+           class="mt-4 inline-flex items-center gap-2 rounded-xl bg-emerald-600 text-white px-4 py-2 text-sm font-medium hover:bg-emerald-700 transition">
+          Falar com Thais
+        </a>
+      </div>
+
+      <!-- Terceira vendedora -->
+      <div class="p-6 rounded-3xl bg-white shadow-soft border border-ink/5">
+        <img class="w-20 h-20 rounded-2xl object-cover mb-4"
+             src="https://i.pravatar.cc/200?img=32"
+             alt="Atendente – Vendedora" />
+        <h3 class="font-semibold text-lg">Equipe Atacado</h3>
+        <p class="text-sm text-neutral-600">Atendimento on-line • Terça a Sábado • Atacado</p>
+        <a href="#"
+           class="mt-4 inline-flex items-center gap-2 rounded-xl bg-emerald-600 text-white px-4 py-2 text-sm font-medium hover:bg-emerald-700 transition">
+          Falar com atendimento
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="max-w-7xl mx-auto px-6 py-12">
+    <div class="rounded-3xl bg-white p-8 md:p-12 shadow-soft border border-ink/5">
+      <h2 class="font-display text-3xl mb-8">O que dizem as revendedoras</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <blockquote class="p-6 rounded-2xl border border-ink/5">
+          <p class="text-neutral-700">“Peças lindas e venda fácil. Em 30 dias dobrei meu faturamento.”</p>
+          <footer class="mt-3 text-sm text-neutral-500">Juliana — São Paulo/SP</footer>
+        </blockquote>
+        <blockquote class="p-6 rounded-2xl border border-ink/5">
+          <p class="text-neutral-700">“Atendimento rápido no Whats e envio sempre no prazo.”</p>
+          <footer class="mt-3 text-sm text-neutral-500">Larissa — Fortaleza/CE</footer>
+        </blockquote>
+        <blockquote class="p-6 rounded-2xl border border-ink/5">
+          <p class="text-neutral-700">“Qualidade boutique: minhas clientes fidelizaram.”</p>
+          <footer class="mt-3 text-sm text-neutral-500">Patrícia — Curitiba/PR</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA final -->
+  <section id="cta" class="max-w-7xl mx-auto px-6 pb-16">
+    <div class="rounded-3xl bg-ink text-white p-10 md:p-14 shadow-soft relative overflow-hidden">
+      <div class="absolute inset-0 bg-[radial-gradient(600px_circle_at_80%_10%,rgba(201,162,107,0.15),transparent)]"></div>
+      <div class="relative">
+        <h2 class="font-display text-3xl md:text-4xl">As vagas para novas revendedoras estão abertas por tempo limitado</h2>
+        <p class="mt-3 text-neutral-200">Clique abaixo e fale com nossa equipe para começar agora mesmo.</p>
+        <div class="mt-6 flex flex-col sm:flex-row gap-3">
+          <a href="#"
+             class="inline-flex items-center justify-center rounded-2xl bg-emerald-600 text-white px-6 py-3 font-medium hover:bg-emerald-700 transition">
+            Falar no WhatsApp
+          </a>
+          <a href="#vendedoras"
+             class="inline-flex items-center justify-center rounded-2xl border border-white/20 px-6 py-3 font-medium hover:bg-white hover:text-ink transition">
+            Escolher uma vendedora
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contato" class="border-t border-ink/10">
+    <div class="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-neutral-600">© <span id="year"></span> VIVITI. Todos os direitos reservados.</p>
+      <div class="flex items-center gap-4 text-sm">
+        <a href="#" class="hover:underline">Política de Privacidade</a>
+        <a href="#" class="hover:underline">Termos</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante do WhatsApp (opcional) -->
+  <a href="#"
+     aria-label="Fale no WhatsApp"
+     class="fixed bottom-6 right-6 inline-flex items-center justify-center w-14 h-14 rounded-full bg-emerald-600 text-white shadow-lg hover:bg-emerald-700 transition">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A11.92 11.92 0 0 0 12.06 0C5.44 0 .06 5.38.06 12c0 2.12.55 4.18 1.6 6.02L0 24l6.17-1.61a12 12 0 0 0 5.89 1.53h.01c6.62 0 12-5.38 12-12 0-3.2-1.25-6.21-3.55-8.44zM12.06 22a10 10 0 0 1-5.1-1.4l-.37-.22-3.66.96.98-3.56-.24-.37A10 10 0 1 1 22.06 12c0 5.52-4.48 10-10 10z"/></svg>
+  </a>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // DICAS:
+    // 1) Substitua os href="#" dos botões por "https://wa.me/55SEUNUMERO?text=Quero%20revender%20com%20a%20VIVITI"
+    // 2) Troque IMG_1_URL_AQUI, IMG_2_URL_AQUI, IMG_3_URL_AQUI pelos links das suas imagens (CDN, S3, ou /public/... no seu projeto).
+    // 3) Caso use Next.js/Tailwind no Cursor, mova este HTML para um componente e mantenha as classes.
+  </script>
+</body>
+</html>
